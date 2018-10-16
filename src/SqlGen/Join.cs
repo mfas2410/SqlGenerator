@@ -1,4 +1,4 @@
-﻿namespace SqlGenerator
+﻿namespace SqlGen
 {
     internal sealed class Join
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SqlGenerator.UnitTest.Model;
+using SqlGen.UnitTest.Model;
 
-namespace SqlGenerator.UnitTest
+namespace SqlGen.UnitTest
 {
     [TestClass]
     public class OrderByTests

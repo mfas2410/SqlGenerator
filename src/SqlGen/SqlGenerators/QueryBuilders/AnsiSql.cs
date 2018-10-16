@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SqlGenerator.SqlGenerators.QueryBuilders
+namespace SqlGen.SqlGenerators.QueryBuilders
 {
     internal class AnsiSql : ISqlBuilder
     {

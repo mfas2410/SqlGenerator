@@ -1,4 +1,4 @@
-﻿namespace SqlGenerator.SqlGenerators.QueryBuilders
+﻿namespace SqlGen.SqlGenerators.QueryBuilders
 {
     internal interface ISqlBuilder
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace SqlGenerator.UnitTest
+namespace SqlGen.UnitTest
 {
     [TestClass]
     public class QueryBuilderTests

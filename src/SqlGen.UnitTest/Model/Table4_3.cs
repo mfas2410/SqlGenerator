@@ -1,4 +1,4 @@
-﻿namespace SqlGenerator.UnitTest.Model
+﻿namespace SqlGen.UnitTest.Model
 {
     public class Table4_3
     {

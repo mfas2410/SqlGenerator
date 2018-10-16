@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace SqlGenerator
+namespace SqlGen
 {
     public abstract class Query
     {

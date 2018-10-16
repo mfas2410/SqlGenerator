@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlGenerator", "SqlGenerator\SqlGenerator.csproj", "{7F0A1A6E-5B84-44ED-A7AF-733290E1A758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlGen", "SqlGen\SqlGen.csproj", "{7F0A1A6E-5B84-44ED-A7AF-733290E1A758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlGenerator.UnitTest", "SqlGenerator.UnitTest\SqlGenerator.UnitTest.csproj", "{3976B7F5-997C-4F22-9EC8-48DFF6CCE3CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlGen.UnitTest", "SqlGen.UnitTest\SqlGen.UnitTest.csproj", "{3976B7F5-997C-4F22-9EC8-48DFF6CCE3CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

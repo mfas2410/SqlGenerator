@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SqlGenerator.UnitTest.Model;
+using SqlGen.UnitTest.Model;
 using System;
 
-namespace SqlGenerator.UnitTest
+namespace SqlGen.UnitTest
 {
     [TestClass]
     public class JoinTests

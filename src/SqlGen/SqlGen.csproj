@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/mfas2410/SqlGenerator/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/mfas2410/SqlGenerator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mfas2410/SqlGenerator.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>sql</PackageTags>
+    <Version>0.1.0-alpha</Version>
+    <Authors>Michael Fastrup</Authors>
+    <Description>An easy SQL generator using .NET</Description>
+    <Copyright>Copyright (c) 2018 Michael Fastrup</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
