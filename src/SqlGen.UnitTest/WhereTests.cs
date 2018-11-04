@@ -85,6 +85,22 @@ namespace SqlGen.UnitTest
         }
 
         [TestMethod]
+        public void WhereLike()
+        {
+            Assert.AreEqual(
+                $"{SelectTable}{FromTable} WHERE [{nameof(Table1)}].[{nameof(Table1.Name)}] LIKE '%Test%'",
+                new QueryBuilder(Dialect.TSql2017).From<Table1>().Where(x => x.Name.Contains("%Test%")).ToString());
+        }
+
+        [TestMethod]
+        public void WhereLikeMultipleTimes()
+        {
+            Assert.AreEqual(
+                $"{SelectTable}{FromTable} WHERE (([{nameof(Table1)}].[{nameof(Table1.Name)}] LIKE '%Test%' OR [{nameof(Table1)}].[{nameof(Table1.Name)}] LIKE '%Test2%') AND [{nameof(Table1)}].[{nameof(Table1.Name)}] LIKE '%Test3%')",
+                new QueryBuilder(Dialect.TSql2017).From<Table1>().Where(x => (x.Name.Contains("%Test%") | x.Name.Contains("%Test2%")) & x.Name.Contains("%Test3%")).ToString());
+        }
+
+        [TestMethod]
         public void WhereNot()
         {
             Assert.AreEqual(

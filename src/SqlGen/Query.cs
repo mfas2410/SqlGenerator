@@ -110,7 +110,6 @@ namespace SqlGen
 
         public Query<T> Where(Expression<Func<T, bool>> expression)
         {
-            // TODO: missing operators: BETWEEN, LIKE, IN
             whereExpression = expression?.ToString() ?? throw new ArgumentNullException(nameof(expression));
             return this;
         }

@@ -9,7 +9,7 @@
     <RepositoryUrl>https://github.com/mfas2410/SqlGenerator.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>sql</PackageTags>
-    <Version>0.1.0-alpha</Version>
+    <Version>0.1.1-alpha</Version>
     <Authors>Michael Fastrup</Authors>
     <Description>An easy SQL generator using .NET</Description>
     <Copyright>Copyright (c) 2018 Michael Fastrup</Copyright>

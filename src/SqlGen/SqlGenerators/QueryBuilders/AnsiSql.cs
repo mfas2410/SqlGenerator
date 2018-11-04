@@ -81,9 +81,16 @@ namespace SqlGen.SqlGenerators.QueryBuilders
 
         private static string ToSql(string expression, params (string, string)[] tableNames)
         {
+            // TODO: missing operators: BETWEEN, IN
             foreach ((string expressionName, string tableName) in tableNames)
             {
                 expression = expression.Replace($"{expressionName}.", $"[{tableName}].");
+            }
+
+            MatchCollection matches = Regex.Matches(expression, @"\(*(?<replace>(?<column>\[[^]]+\]\.\w+)\.Contains\(""(?<like>.*?)""\))\)*(?: And | Or |$)");
+            foreach (Match match in matches)
+            {
+                expression = expression.Replace(match.Groups["replace"].Value, $"{match.Groups["column"].Value} LIKE '{match.Groups["like"].Value}'");
             }
 
             foreach (Match match in Regex.Matches(expression, @"\.(\w+)"))
